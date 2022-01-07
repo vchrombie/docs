@@ -1,209 +1,155 @@
-%-------------------------
-% Resume in Latex
-% Author : Indu dwivedi
-% Adapted from: Sourabh Bajaj
-% License : MIT
-%------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CV Bruno Alves 06/2017 %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper,11pt]{article}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{style}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[pdftex, hidelinks]{hyperref}
-\usepackage{fancyhdr}
+%Layout
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
 
-\usepackage[charter]{mathdesign} % Bitstream Charter
-% \usepackage{newpxtext,newpxmath} % Palatino
+%Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+%Colors
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.50in}
-\addtolength{\evensidemargin}{-0.50in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\definecolor{accent}{HTML}{000e17}
+\definecolor{heading}{HTML}{000e17}
+\definecolor{emphasis}{HTML}{696969}
+\definecolor{body}{HTML}{01415f}
 
-\urlstyle{same}
+\colorlet{heading}{heading}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{emphasis}
+\colorlet{body}{body}
 
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeItemNoBullet}[2]{
-  \item[]\small{
-    \hspace{2pt}\textbf{#1}{: #2 \vspace{-6pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item[]
-  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
-      \hspace{-10pt}\textbf{#1} & #2 \\
-      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
-
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-% custom commands
-\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
-
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%
 
 \begin{document}
+\name{Venu Vardhan Reddy Tekula}
+\tagline{}
+% \photo{2.5cm}{BrunoAlves}
+\personalinfo{
+  \email{venuvardhanreddytekula8@gmail.com}
+%   \phone{+91 8186866445}
+%   \mailaddress{Rua do Verdelho, 218, Hab.38}
+  \location{Hyderabad, India}
+  \homepage{vchrombie.github.io}
+  \linkedin{linkedin.com/in/tvvr}
+%   \github{github.com/vchrombie}
+%   \twitter{twitter.com/vchrombie}
+}
 
-%----------HEADING-----------------
-\begin{center}
-  \small \textbf{\huge Venu Vardhan Reddy Tekula} \\ 
-  {(+91) 8186866445} | 
-  \href{mailto:venuvardhanreddytekula8@gmail.com}{venuvardhanreddytekula8@gmail.com} | \href{https://vchrombie.github.io}{vchrombie.github.io} \\
-  \href{https://www.linkedin.com/in/tvvr/}{linkedin.com/in/tvvr} | \href{https://github.com/vchrombie}{github.com/vchrombie} | \href{https://twitter.com/vchrombie}{twitter.com/vchrombie} \\
+%
 
- 
-\end{center}
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
 
+%
 
-%-----------SUMMARY-----------------
-\shorterSection{Summary}
-\small A proactive and fast learning individual seeking an opportunity to work as a dynamic backend engineer utilizing my analytical \& methodical skills and relevant expertise to help the company achieve business goals while sticking to vision, mission and values.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{5pt}
+\cvsection[sidebar]{Experience}
 
-%-----------EDUCATION-----------------
-\shorterSection{Education}
- \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Amrita School of Engineering, Amrita Vishwa Vidyapeetham}{Amritapuri, Kollam, India.}
-      {Bachelors of Technology in Computer Science and Engineering;  GPA: 8.26/10.0}{July 2016 - May 2020}{}
-    
-    \vspace{-10pt}
+\cvevent{GrimoireLab Community Manager}{Bitergia \& CHAOSS, The Linux Foundation}{June 2021 - Present}{Spain/Remote Work}
 
-    \resumeSubheading
-      {Ben-Gurion University of the Negev}{Beersheba, Israel.}
-      {Data Mining and Business Intelligence with its applications in Cyber Security - Summer School}{July 2019 - August 2019}{}
+\begin{itemize}
+    \item Working on fostering and growing the GrimoireLab Community, along with Bitergia and CHAOSS.
+    \item Work closely with the GrimoireLab WG which build, document, craft solutions and maintain different projects under the GrimoireLab toolchain.
+    \item Joined the GrimoireLab MSR Virtual Hackathon Committee Team as a Support Co-Chair for the MSR Conference 2022.
+    % \item Was involved in mentoring, on-boarding, and dissemination activities around GrimoireLab like the Google Season of Docs and Outreachy.
+\end{itemize}
 
-    \vspace{-5pt}
+%
 
-    % \resumeSubheading
-    %   {Narayana Junior College}{Dilsukhnagar, Hyderabad, India.}
-    %   {Higher Secondary;  Marks: 95.1\%}{Aug 2014 - May 2016}{}
-      
-    % \resumeSubheading
-    %   {Dilsukhnagar Public School}{Vanasthalipuram, Hyderabad, India.}
-    %   {Secondary; GPA: 9.8/10.0}{May 2014}{}
+\divider
 
-  \resumeSubHeadingListEnd
-  
-  
-%-----------EXPERIENCE-----------------
-\shorterSection{Experience}
-  \resumeSubHeadingListStart
+\cvevent{Backend Developer}{Bitergia}{October 2020 - April 2021}{Spain/Remote Work}
 
-    \resumeSubheading
-      {Bitergia}{Spain/Remote Work}
-      {Backend Developer}{October 2020 - April 2021}
+\begin{itemize}
+	\item Worked on creating an automatic packaging \& release workflow of the GrimoireLab toolset.
+	\item Worked on creating release-tools using Python to generate releases notes using changelog entries and publishing the releases to GitHub.
+	\item Worked closely with the customers by providing support during issues in the deployments of Bitergia Analytics. We continuously take feedback \& feature requests and work on them.
+\end{itemize}
 
-    \vspace{-3pt}
+%
 
-      I worked on creating an automatic packaging \& release workflow of the GrimoireLab toolset. Contributed to some of the main features of the release-tools tool. Created CI/CD systems for various python tools with ELK, Django frameworks. In addition, I was also involved in mentoring, on-boarding, and dissemination activities around GrimoireLab.
-  
-    \vspace{-10pt}
+% %%%%%%%%%%%%%
+% %Experience
+% %%%%%%%%%%%%%
 
-    % \resumeSubheading
-    %   {FOSS@Amrita}{Amritapuri, India}
-    %   {Member and Student Mentor}{July 2016 - Present}
+% \cvevent{Electrical Engineering / IT Manager}{ADIRA –- Metal-Forming Solutions S.A.}{April 2014 -- April 2015}{Porto, Portugal}
 
-    %   amFOSS club trains students encourage contributions to free and open source software and skill development. I actively mentor juniors and participate in various club activities.
-      
-    \resumeSubheading
-      {CHAOSS - The Linux Foundation}{}
-      {Open Source Contributor, GSoC Student Developer}{January 2019 - Present}
+% \begin{itemize}
+%   \item Development of electrical projects for Press Brakes and Shears;
+%   \item Implementation and research of new features for products;
+%   \item PLC Programming;
+%   \item IT management and administration;
+% \end{itemize}
 
-    \vspace{-3pt}
+% \divider
+% %
 
-      I work closely with the \textbf{GrimoireLab WG} which mainly focuses on developing the GrimoireLab toolchain. I also worked as a Student Developer for CHAOSS as a part of the Google Summer of Code Program 2020 program. In addition, I was also involved in organizing outreach programs like the Google Season of Docs and Outreachy.
+\cvsection{Projects}
 
-  \resumeSubHeadingListEnd
+%%%%%%%%%%%%%
+%Project 1
+%%%%%%%%%%%%%
 
+\cvproject{Creating Quality models using GrimoireLab and CHAOSS metrics}
+\begin{itemize}
+  \item The main aim is to design an approach to shape the GrimoireLab data in a format that can easily be consumed by Prosoul and implement it on the data obtained from a few data sources like git, github, and mailing list repositories to obtain simple quality models.
+\end{itemize}
 
-%-----------ACADEMIC PROJECTS AND INTERNSHIPS-----------------
-\shorterSection{Projects}
-  \resumeSubHeadingListStart
+\divider
 
-    \resumeSubItem{Automating the release process using Bitergia/release-tools, Poetry, and GitHub Actions}{Created an automatic packaging \& release workflow of the GrimoireLab toolset using the release-tools, poetry, and github actions. Contributed to the Bitergia/release-tools project which is a set of tools to generate GrimoireLab releases.}    
+\cvproject{GrimoireLab: Perceval plugin for Zulip}
+\begin{itemize}
+  \item Worked on creating a Perceval backend plugin for the Zulip platform.
+  \item Perceval is the GrimoireLab component that collects data from different data sources and returns it as JSON documents.
+\end{itemize}
 
-    \resumeSubItem{Creating Quality models using GrimoireLab and CHAOSS metrics}{The main aim of the project is to design an approach to shape the GrimoireLab data in a format that can easily be consumed by Prosoul and implement it on the data obtained from a few data sources like git, github and mailing list repositories to obtain simple quality models.}    
+\divider
 
-    \resumeSubItem{GrimoireLab: Perceval plugin for Zulip}{Worked on creating a perceval backend plugin for Zulip data source. Perceval is the GrimoireLab component that collects data from different data sources and returns it as JSON documents.}    
+\cvproject{GitLit}
+\begin{itemize}
+  \item Social networking site exclusively for OSS developers built with Django, GitHub API, and GraphQL.
+  \item Calculates scores of profiles and projects and connects enthusiastic developers to the most interesting and relevant projects and forming new communities of like-minded and passionate developers.
+\end{itemize}
 
-    \resumeSubItem{Analysis of Phishing Detection using SHAP}{Worked under Dr. Yisroel Mirsky on the research project of BGU Cyber Labs, Phishing Detection. The aim is to build a tool to extract the important features contributing to the project using SHAP.}    
+\divider
 
-    % \resumeSubItem{CHAOSS Micro-tasks}{It was a part of the selection procedure for GSoC 2019. Worked on the implementations of evolution metrics in Python and made detailed analysis reports about the growth of FOSSASIA open source projects.}    
-    
-    \resumeSubItem{GitLit}{It is a social networking site exclusively for OSS developers. Built with Django, GitHub API, and GraphQL. It can calculate scores of profiles and projects using certain metrics. It connects enthusiastic developers to the most interesting and relevant projects and forming new communities of like-minded and passionate developers.}
-	
-    \resumeSubItem{Ecotourism@Lambasingi}{{Student Social Responsibility Project}. We organized a 4-day campaign to \textit{promote cleanliness} in a \textit{remote place Lambasingi}, which is one of the villages in Andhra Pradesh near Visakhapatnam as a part of the \textit{SSR Project}.}        
-    
-  \resumeSubHeadingListEnd
+\cvproject{Ecotourism@Lambasingi (Student Social Responsibility Project)}
+\begin{itemize}
+  \item We organized a 4-day campaign to promote cleanliness in a remote place Lambasingi, which is one of the villages in Andhra Pradesh near Visakhapatnam.
+\end{itemize}
 
+%
 
-%-----------SKILLS-----------------
-\shorterSection{Skills}
-  \resumeSubHeadingListStart
-  \small
-    \item{\textbf{Languages}{: Python, Java}}
-    \vspace{-4pt}
-    \item{\textbf{Tools}{: \LaTeX, Jupyter, Git \& GitHub/GitLab, ElasticSearch, Kibana, MySQL, Docker}}
-    \vspace{-4pt}
-    \item{\textbf{Tech Stack \& Frameworks}{Django, Flask, Vue.js}}
-    \vspace{-5pt}
-\resumeSubHeadingListEnd
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Certificates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Certificates}
+
+% %%%%%%%%%%%%%
+% %Certificate 1
+% %%%%%%%%%%%%%
+
+% \cvevent{Kaizen Office Live}{Kaizen Institute Portugal}{5hours}{Porto,Portugal}
+% \divider
+
+% %%%%%%%%%%%%%
+% %Certificate 2
+% %%%%%%%%%%%%%
+
+% \cvevent{Kaizen Service}{Kaizen Institute Portugal}{16hours}{Porto,Portugal}
+% \divider
 
 
-MySQL, , Elasticsearch, Kibana, AWS, Jupyter
-
-%-----------Additional Experience & Achievements-----------------
-\shorterSection{Additional Experience \& Achievements}
-  \resumeSubHeadingListStart
-  \small
-    \item{Got selected as a student to the Data Mining and Business Intelligence with application in Cyber Security Summer Program at Ben-Gurion University of the Negev (BGU), Israel with 92\% scholarship and 400 USD stipend.}
-    \vspace{-5pt}
-    \item{I served as the \textbf{Chief Coordinator} for the Data Analytics with Python workshop in the \textbf{Road To Excellence} internship program conducted by CIR@Amrita in with the collaboration with FOSS@Amrita.}
-    \vspace{-5pt}    
-	\item{I served as the \textbf{Student Coordinator} for the \textbf{Venue Maintenance Seva} during \textbf{Amritavarsham} which is the birthday celebration of Mata Amritanandamayi Devi, popularly known as "\textbf{Amma}".}
-  \resumeSubHeadingListEnd
-%-------------------------------------------
 \end{document}
